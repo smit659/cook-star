@@ -26,10 +26,7 @@ const Home = () => {
 
           <h1 className="intro-head">Cook Your meal with CookStar</h1>
           <p className="intro-para">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
-            consequatur veritatis veniam velit voluptas tempore at aliquid
-            ducimus optio ab magni, neque, quos officiis dolore perspiciatis
-            maiores amet esse alias! 
+          Explore or Create new and delicious recipes & make your food more appealing.
           </p>
 
         </section>

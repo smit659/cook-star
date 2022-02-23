@@ -127,12 +127,12 @@ const UserRecipe = () => {
           action="/recipeData"
           method="post"
           onSubmit={handleSubmit}>
-          <div className="create-img-container">
+        
             <label htmlFor="input-image">
-              <img src="https://img.icons8.com/bubbles/2x/camera.png" alt="" />
+              <img classname="img-create" src="https://img.icons8.com/bubbles/2x/camera.png" alt="" />
             </label>
             <input required name="imager" onChange={filechangehandle} type="file" alt="..." accept="image/*" id="input-image" />
-          </div>
+         
 
           <div className="recipeInfo-container">
             <input

@@ -164,13 +164,16 @@ margin: 10px auto;
  
   font-family: 'Grechen Fuemen', cursive;
 }
+.img-create{
+  display: block;
+}
 .intro-para{
   display: block;
   text-align: center;
   /* justify-content: center; */
   width:55%;
   margin:0 auto;
-  margin-top:16px;
+  margin-top:36px;
   font-size:20px;
 }
 @media screen and (max-width:400px){

@@ -36,7 +36,8 @@
   /* background-color: orange; */
 }
 #input-image{
-  width:200px;
+  width:129px;
+  display:block;
 }
 .recipeForm-container {
   /* margin-top: 80px; */
@@ -199,7 +200,7 @@
   padding: 10px;
   border-radius: 20px;
   height: 40px;
-  width: auto;
+  width: 70%;
   font-size: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 400px) {
@@ -287,7 +288,7 @@
 
 @media screen and (min-width: 400px) and (max-width: 500px) {
   .recipeForm-container {
-    width: 480px;
+    width: 440px;
   }
   .recipeInfo-container {
     background-color: white;
@@ -420,7 +421,11 @@
     width: 25px;
     height: 25px;
   }
-
+  .ingredient-step {
+    height: 40px;
+    width: 330px;
+    font-size: 15px;
+  }
   .ingredient-steps {
     height: 40px;
     width: 330px;
@@ -493,6 +498,11 @@
   }
 
   .ingredient-steps {
+    height: 40px;
+    width: 330px;
+    font-size: 15px;
+  }
+  .ingredient-step {
     height: 40px;
     width: 330px;
     font-size: 15px;

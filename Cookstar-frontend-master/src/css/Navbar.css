@@ -17,8 +17,11 @@
 .responsive-header-nav{
   display: none;
 } 
+#root{
+  margin-bottom: 100px;
+}
 .nav-logo{
-  width:5em;
+  width:4.5em;
   object-fit: contain;
 }
 .navbar{
@@ -29,6 +32,17 @@
   justify-content: space-between;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
   height:60px;
+}
+.nav-logo-name {
+  margin-left: 1em;
+  color: var(--light-mode);
+  display: flex;
+  font-family: 'Grechen Fuemen', cursive;
+  background-color: var(--primary-clr);
+  height: 46px;
+  display: grid;
+  place-items: center;
+  padding: 0 15px;
 }
 .nav-left{
   display:flex;
@@ -89,7 +103,7 @@
   display: flex;
   font-family: 'Grechen Fuemen', cursive;
   background-color: var(--primary-clr);
-  height:60px;
+  height:55px;
   display: grid;
   place-items: center;
   padding:0 15px;
@@ -202,4 +216,14 @@ justify-content: center;
          .nav-logo-name{
              display: none;
          }
-       }
+       }.nav-logo-name {
+        margin-left: 1em;
+        color: var(--light-mode);
+        display: flex;
+        font-family: 'Grechen Fuemen', cursive;
+        background-color: var(--primary-clr);
+        height: 46px;
+        display: grid;
+        place-items: center;
+        padding: 0 15px;
+      }

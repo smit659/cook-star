@@ -1,0 +1,85 @@
+:root{
+    --primary-clr:#d8123c;
+    --mat:#333333;
+    --light-mode:white;
+    --dark-mode:#181a1c;
+}
+.me-section{
+    /* width:1500px;
+    max-width: 90%;
+    margin:0 auto; */
+}
+.cards-section-saved,.cards-section-myrecipes{
+    margin-top: 40px;
+}
+.myprofile-container{
+    margin: 6px 0 40px 0;
+    background-color: rgb(242, 249, 255);
+    padding-top:10px;
+}
+.profile-info{
+    display:grid;
+    grid-template-columns: 100px auto 20px;
+    align-items: center;
+    padding:0 20px;
+}
+.edit-btn{
+    font-size: 20px;
+    border:none;
+    background: transparent;
+    cursor: pointer;
+}
+.avtar-container{
+    border-radius: 50%;
+    background-color: purple;
+    height:90px;
+    width:90px;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+.saved-myrecipes-container{
+    height:100%;
+}
+.saved-myrecipes-container ul{
+    display:grid;
+    grid-template-columns: 123px 90px;
+    padding:20px 0 0 0;
+    list-style-type: none;
+}
+.saved-myrecipes-container ul li a{
+    text-decoration: none;
+    color:black;
+}
+.saved-myrecipes-container ul li{
+    padding:7px 0 17px 20px;
+}
+.border-bottom{
+    border-bottom: 2px solid black;
+}
+.saved-myrecipes-container button{
+    background:transparent;
+    border:none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.saved-recipe-content{
+    font-size:35px;
+    display: grid;
+    place-items: center;
+    height:42vh;
+    width:90vw;
+}
+@media screen and (max-width:750px){
+    .me-section{
+        /* max-width: 80%; */
+    }
+    .saved-recipe-content{
+        width:80vw;
+    }
+}
+@media screen and (min-width:751px){
+    .myprofile-container{
+        margin: 6px 32%;
+    }
+}

@@ -1,0 +1,16 @@
+:root{
+    --primary-clr:#d8123c;
+    --mat:#333333;
+    --light-mode:white;
+    --dark-mode:#181a1c;
+}
+.cards-section{
+    width:1500px;
+    max-width: 71%;
+    margin:0 auto;
+}
+@media screen and (max-width:750px){
+    .cards-section{
+        max-width: 56%;
+    }
+}

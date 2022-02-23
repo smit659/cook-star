@@ -1,0 +1,45 @@
+.bag-title{
+    text-align: center;
+    margin-top:50px;
+    font-size:32px;
+  }
+  .fav-card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .fav-card-info,.fav-card p{
+    padding:5px 5px;
+  }
+  .fav-card-info button{
+    justify-self: end;
+    align-self: flex-start;
+    background:transparent;
+    border:none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .fav-card{
+    background:rgb(198, 252, 198);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .fav-card img{
+    width:100%;
+    height:185px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .bag-cards-section{
+    margin-top:40px;
+  }
+  @media screen and (min-width: 750px){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    .bag-cards-section{
+      background-color: rgb(255, 227, 174);
+      padding:0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(259px,1fr));
+      column-gap: 20px;
+    }
+  }
+  

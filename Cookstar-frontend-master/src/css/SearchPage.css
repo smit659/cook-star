@@ -1,0 +1,259 @@
+:root{
+  --primary-clr:#d8123c;
+  --mat:#333333;
+  --light-mode:white;
+  --dark-mode:#181a1c;
+}
+*{
+  margin: 0;
+}
+  .logo {
+    font-size: 3.5rem;
+    font-family: "Pacifico", cursive;
+    text-decoration: none;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo img {
+    width: 5rem;
+    height: 4.5rem;
+    align-self: center;
+  }
+  .search-block {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* font-size: 50px; */
+    display: grid;
+    grid-template-columns: 1px 24px 1fr auto;
+    column-gap: 8px;
+    padding-left: 8px;
+    /* padding-top:3px; */
+    /* margin-top:60px; */
+    /* margin-bottom: -40px; */
+    background-color: var(--light-mode);
+    height:50px;
+  }
+  .search-block label{
+    align-self: center;
+    font-size:10px;
+  }
+  #search {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none; 
+    font-size:13px;
+  }
+  input:focus{
+      outline: none;
+  }
+  #submit {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none; 
+    background-color: var(--primary-clr);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 100%;
+    /* width: 6rem;  */
+    cursor: pointer;
+    color:var(--light-mode);
+    transform: translate(-1px,-1px);
+    transition: 0.2s linear;
+    padding:0 5px 0 5px;
+    margin-top:1px;
+    margin-right:-1px;
+  }
+  #submit:hover{
+    background-color: rgb(255, 91, 91);
+  }
+  .buttons {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+  } 
+  .btn {
+      margin: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 1rem;
+      background-color: rgb(168, 123, 102);
+      border-radius: 10px;
+      padding: 9px;
+  }
+  /* Search Section */
+  .searchbar-filter-section{
+    position:relative;
+  }
+  .banner-info{
+    /* background:red; */
+    position: absolute;
+    top:12%;
+    left:6%;
+    width:88%;
+    height:50%;
+  }
+ .banner-info-content{
+  text-align: center;
+  color:white;
+ }
+  .banner-info h1{
+    font-size:45px;
+  }
+  .banner-info h3{
+    font-size:30px;
+    margin-top:20px;
+  }
+  .searchbar-component{
+    /* background:orange; */
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    width:100%;
+    height:50px;
+  }
+  .partition{
+    width:1px;
+    background:rgb(138, 138, 138);
+    margin:8px 0;
+  }
+  #dietInput{
+    width:100%;
+    height:100%;
+    border:none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .banner2-container{
+    background:black;
+    height:350px;
+    margin-bottom:40px;
+  }
+  .searchbar-filter-section img{
+    width:100%;
+    height:100%;
+    object-fit: fill;
+    opacity:0.4;
+  }
+  @media screen and (min-width: 750px){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+    .banner2-container{
+      height:420px;
+    }
+    .banner-info{
+      /* background:red; */
+      position: absolute;
+      top:27%;
+      left:13%;
+      width:75%;
+      height:50%;
+    }
+    .searchbar-component{
+      margin-left:auto;
+      margin-right:auto;
+      width:600px;
+    }
+  }
+  /*  Card  */
+  .cards-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(229px,1fr));
+    column-gap: 25px;
+    row-gap: 3px;
+    margin-top:60px;
+  }
+  .card-info{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-top:8px;
+    padding:0 15px;
+    align-items: center;
+  }
+  .like-btn{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 7px;
+    align-items: center;
+    justify-items: end;
+    background: transparent;
+    border:none;
+    cursor:pointer;
+  }
+  .card-info h3{
+    font-size: 20px;
+  }
+  .card-info-container p{
+    letter-spacing: 2px;
+    color:var(--primary-clr);
+  }
+  .img-container{
+    padding:15px 15px 0 15px;
+  }
+  .img-container img{
+    width:100%;
+    height:220px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .fav-btn{
+    justify-self: end;
+    background: transparent;
+    border:none;
+    height:20px;   
+    font-size: 23px; 
+    cursor: pointer;
+  }
+  .main-card{
+    margin-bottom: 20px;
+    width:255px;
+    position:relative;
+    height:355px;
+    /* perspective: 1500px; */
+  }
+  .card-side{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition: 0.1s linear;
+    border-radius: 8px;
+    border:1px solid rgb(209, 209, 209);
+    background-color: white;
+  }
+  .recipe-btn{
+    text-align: center;
+    margin-top:27px;
+    display:block;
+    text-decoration: none;
+    background:var(--primary-clr);
+    color:var(--light-mode);
+    padding:5px 0;
+    letter-spacing: 2px;
+    transition: 0.1s linear;
+    cursor: pointer;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid var(--primary-clr);
+  }
+  .recipe-btn:hover{
+    color:var(--primary-clr);
+    background:var(--light-mode);
+    border: 2px solid var(--primary-clr);
+  }
+  .preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    z-index: 999;
+    transition:all 0.3s linear;
+  }
+  .hide-preloader {
+    z-index: -999;
+    visibility: hidden;
+  }

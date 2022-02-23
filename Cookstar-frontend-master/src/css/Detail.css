@@ -1,0 +1,125 @@
+.detail-section{
+    max-width:1100px;
+    width:45%;
+    margin:0 auto 80px auto;
+}
+.recipeimg-container img{
+    width:100%;
+}
+.save-container{
+    display:grid;
+}
+.save-container Button{
+    padding: 15px;
+    padding-top: 19px;
+    font-size: 27px;
+    justify-self: end;
+}
+.user-name-cont{
+    display:grid;
+    grid-template-columns: 80px auto;
+}
+.user-avt{
+    padding:20px;
+    border-radius: 50%;
+    background: purple;
+    width:70px;
+    height:70px;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    font-size:27px;
+}
+.username-cont{
+    padding-top:10px;
+}
+.recipe-user-name-container{
+    padding:15px;
+}
+.time-border{
+    height:1px;
+    background:grey;
+    width:100%;
+}
+.ingredients-container,.steps-container{
+    padding:15px;
+}
+.time-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:6px;
+}
+.time-cont p{
+    justify-self: end;
+    font-size:20px;
+}
+.serve-container{
+    display: grid;
+    grid-template-columns: 10px 80px;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 5px;
+}
+.allrecipe-btn-container{
+    margin-top: 14px;
+    display: grid;
+}
+.allrecipe-btn-container button{
+    display:inline;
+    place-items: center;
+    width:75%;
+    margin:0 auto;
+    text-decoration: none;
+    font-size: 20px;
+    padding:7px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    background:transparent;
+    background-color:rgb(73, 73, 73);
+    color:white;
+    border:none;
+    border-radius: 5px;
+    transition:all 0.1s;
+}
+.allrecipe-btn-container a{
+    text-decoration: none;
+    color:white;
+}
+.allrecipe-btn-container button:hover{
+    background-color: rgb(87, 87, 87);
+}
+@media screen and (max-width:750px){
+    .detail-section{
+        width:100%;
+    }
+}
+
+/* .details{
+    background-color: #bb3333;
+}
+.detail-container{
+    background-color:rgb(235,227,227);
+}
+.detail-img{
+    border-radius:244px;
+    display:block;
+    border: 2px solid black;
+    margin: 2px auto;
+    width: 260px;
+    height: 260px;
+}
+
+@media all and (max-width:400px){
+    .detail-img{
+      
+        width: 160px;
+        height: 160px;
+    
+    } 
+} */
+.shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}

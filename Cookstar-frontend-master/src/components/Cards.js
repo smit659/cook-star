@@ -18,7 +18,7 @@ const Cards = (props) => {
       };
 
     const unlikeHandler = () => {
-      axios.put("http://localhost:3001/recipeData/dislike",{email:m,id:props.id} ,config)
+      axios.put("https://cookstar.herokuapp.com/recipeData/dislike",{email:m,id:props.id} ,config)
         .then((res) => {
             setLikeValue(likeValue + 1);
         })
@@ -28,7 +28,7 @@ const Cards = (props) => {
         });
     }
     const likeHandler = () => {
-      axios.put("http://localhost:3001/recipeData/like",{email:m,id:props.id} ,config)
+      axios.put("https://cookstar.herokuapp.com/recipeData/like",{email:m,id:props.id} ,config)
         .then((res) => {
           setLikeValue(likeValue + 1);
         })

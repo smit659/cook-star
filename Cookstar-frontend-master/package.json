@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://smit659.github.io/cookstar",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -13,6 +14,7 @@
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.4",
     "chart.js": "^3.5.1",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-chartjs-2": "^3.0.5",
     "react-dom": "^17.0.2",
@@ -27,7 +29,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" :"npm run build",
+    "deploy":"gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [

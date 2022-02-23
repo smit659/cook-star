@@ -101,7 +101,7 @@ const UserRecipe = () => {
       //console.log(file);
       console.log(data);
       axios
-        .post("http://localhost:3001/recipeData",data, config)
+        .post("https://cookstar.herokuapp.com/recipeData",data, config)
         .then((res) => {
           alert("successfully published");
           history.push('/me');

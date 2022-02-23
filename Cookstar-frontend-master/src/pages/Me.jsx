@@ -33,14 +33,14 @@ function Me() {
     }
     useEffect(()=>{
         async function getBookmark(){
-            await axios.get('http://localhost:3001/userRecipe').then((response)=>{
+            await axios.get('https://cookstar.herokuapp.com/userRecipe').then((response)=>{
                 setResi(response.data);
             }).catch((err)=>alert(err));
         }
         getBookmark();
         async function fetcher(){
-            await axios.get('http://localhost:3001/me',config).then(res=>{
-                console.log(res.data); setRes(res.data)}).catch(err=>{alert('Unauthorized !! Please Login Jay');
+            await axios.get('https://cookstar.herokuapp.com/me',config).then(res=>{
+                console.log(res.data); setRes(res.data)}).catch(err=>{alert('Unauthorized !! Please Login ');
                 history.push('/login');});
             }
             fetcher();
@@ -53,21 +53,21 @@ function Me() {
                 return item;
             }
         }));
-    },[resi,likeValue]);
+    },[resi,likeValue]); 
     
     // const savedCount = bagItems.length + bagItemsUsers.length;
     return (
         <div className="me-section">
             <div className="myprofile-container">
                 <div className="profile-info">
-                    <div className="avtar-container">{localStorage.getItem('username').substring(0,1)}</div>
-                    <h2>{localStorage.getItem('username')}</h2>
+                <div className="avtar-container">{localStorage.getItem('username')?localStorage.getItem('username').substring(0,1):<></>}  </div>
+                    <h2>{localStorage.getItem('username')?localStorage.getItem('username'):<></>}</h2>
                     <Link to="/updateProfile"><button className="edit-btn"><FaRegEdit/></button></Link>
                 </div>
                 <div className="saved-myrecipes-container">
                     <ul>
-                        <li className={myrecipe ? "border-bottom" : ""}><a href="#" onClick={toggleMyRecipe}>My Recipes</a></li>
-                        <li className={saved ? "border-bottom" : ""}><a href="#" onClick={toggleSavedRecipe}>Saved <span></span></a></li>
+                        <li className={myrecipe ? "border-bottom" : ""}><a  onClick={toggleMyRecipe}>My Recipes</a></li>
+                        <li className={saved ? "border-bottom" : ""}><a  onClick={toggleSavedRecipe}>Saved <span></span></a></li>
                     </ul>
                 </div>
             </div>

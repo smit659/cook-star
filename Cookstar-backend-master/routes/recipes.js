@@ -10,6 +10,7 @@ router.route('/userRecipeClick/').get(showSingleRecipe);
 router.route('/register').post(registerUser);
 router.route('/login').post(loginUser);
 router.route('/updateProfile').patch(updateProfile);
+
 // router.route('/me').get(myProfile);
 
 module.exports = router;

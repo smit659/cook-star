@@ -97,7 +97,7 @@ function Search() {
       </Backdrop>:  <article className="cards-section">
                     {result.map((recipes,index)=>{
                         return ( 
-                        <Card key={index} id={index} link={recipes.recipe.url} info={recipes.recipe.mealType} title={recipes.recipe.label} img={recipes.recipe.image} cuisineType={recipes.recipe.cuisineType}/>);
+                        <Card style={{margin:'2px auto'}} key={index} id={index} link={recipes.recipe.url} info={recipes.recipe.mealType} title={recipes.recipe.label} img={recipes.recipe.image} cuisineType={recipes.recipe.cuisineType}/>);
                     })}
                 </article>
                 }

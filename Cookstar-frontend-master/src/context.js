@@ -17,7 +17,7 @@ const ContextAPI = ({children})=>{
 
     useEffect(()=>{
         async function fetches(){
-            const result = await axios.get('http://localhost:3001/userRecipe');
+            const result = await axios.get('https://cookstar.herokuapp.com/userRecipe');
             setUserRecipes(result.data);
         }
         fetches();
@@ -73,7 +73,7 @@ const ContextAPI = ({children})=>{
     // }
 
     const unBookmarkHandler = (id) => {
-        axios.put("http://localhost:3001/recipeData/unbookmark",{email:m,id:id} ,config)
+        axios.put("https://cookstar.herokuapp.com/recipeData/unbookmark",{email:m,id:id} ,config)
         .then((res) => {
             setValue(value + 1);
         })
@@ -82,7 +82,7 @@ const ContextAPI = ({children})=>{
         });
     }
     const bookmarkHandler = (id) => {       
-        axios.put("http://localhost:3001/recipeData/bookmark",{email:m,id:id} ,config)
+        axios.put("https://cookstar.herokuapp.com/recipeData/bookmark",{email:m,id:id} ,config)
         .then((res) => {
             setValue(value + 1);
         })

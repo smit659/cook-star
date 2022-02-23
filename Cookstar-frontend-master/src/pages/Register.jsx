@@ -34,7 +34,7 @@ const Register = () => {
       alert("password should contain atleast one number and one special character");
       return ;
     }
-    axios.post('http://localhost:3001/register',datas).then((response)=>{
+    axios.post('https://cookstar.herokuapp.com/register',datas).then((response)=>{
         alert('Successfully Registered');
         history.push('/login');
     }).catch(err=>{alert(err)});  

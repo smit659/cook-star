@@ -11,7 +11,7 @@ const Card = (props) => {
                 </div>
                 <div className="card-info-container">
                     <div className="card-info">
-                        <h3>{props.title.length>15 ? `${props.title.substring(0,12)}...` : props.title}</h3>
+                        <h3>{props.title.length>14 ? `${props.title.substring(0,11)}...` : props.title}</h3>
                         <button className="fav-btn"><FaRegHeart/></button>
                     </div>
                     <p style={{padding:'0 0 0 15px'}}>{props.info}</p>

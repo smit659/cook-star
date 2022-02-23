@@ -108,7 +108,7 @@ const Login = () => {
     e.preventDefault();
 
     axios
-      .post("http://localhost:3001/login", datas)
+      .post("https://cookstar.herokuapp.com/login", datas)
       .then((response) => {
         console.log(response.data);
         dispatch({ type: "USER", payload: true });

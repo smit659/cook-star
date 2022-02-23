@@ -14,7 +14,7 @@ function UserRecipePage() {
     const [res,setRes]=useState([]);
     useEffect(()=>{
        async function fetches(){
-            let result=await axios.get('http://localhost:3001/userRecipe');
+            let result=await axios.get('https://cookstar.herokuapp.com/userRecipe');
             let y=result.data;
             setRes(y);
        }

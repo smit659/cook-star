@@ -99,7 +99,12 @@ app.get('/info',(req,res)=>{
      }
  });
 })
-
+app.get('/userRecipe',function(req, res){
+    models.find(function(err,result){
+       res.send(result);
+   });
+}
+);
 app.post('/getUser',(req,res) => {
     //console.log(req.body);
         authModal.find({email:req.body.email},function(err,result){
@@ -170,7 +175,7 @@ app.put('/recipeData/unbookmark',verifyToken,function(req,res){
 const start = async() => {
     try {
         await connectDB('mongodb+srv://smit-admin:555admin@cluster0.12u2y.mongodb.net/RecipeData');
-        app.listen(3001,console.log(`server is listening on port : 3001`));
+        app.listen(process.env.PORT||3001,console.log(`server is listening on port : 3001`));
     } 
     catch (error) {
         console.log(error);   

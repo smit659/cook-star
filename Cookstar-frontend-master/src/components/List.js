@@ -22,7 +22,7 @@ const List = ({ name,routes}) => {
   let carouselUserData,carouselUserDataTrending;
   React.useEffect(()=>{
       async function fetches() {
-      await axios.get('http://localhost:3001/userRecipe').then((result)=>{
+      await axios.get('https://cookstar.herokuapp.com/userRecipe').then((result)=>{
         setUserData(result.data);
         console.log(userData);
         

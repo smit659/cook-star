@@ -1,5 +1,5 @@
 import React,{createContext,useReducer} from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home';
 import About from './pages/About'
 import Search from './pages/Search'
@@ -51,7 +51,7 @@ const  [state,dispatch]=useReducer(reducer,initialState);
         <Route exact path="/users/:id">
           <Detail/>
         </Route>
-        <Route exact path="/users/info/:email">
+        <Route  path="/users/info/:email">
           <UserProfile/>
         </Route>
         <Route path="/login">

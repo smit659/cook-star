@@ -16,7 +16,7 @@ function UserProfile() {
     const {email}=useParams();
     const [datas,setDatas] = useState([]);
     async function fetcher(){
-      await axios.get('http://localhost:3001/info',{params:{emails:email}}).then((result)=>{console.log(result.data)  ; setDatas(result.data);}).catch(err=>{alert('Unauthorized-- ! Login First');history.push('/login')}); 
+      await axios.get('https://cookstar.herokuapp.com/info',{params:{emails:email}}).then((result)=>{console.log(result.data)  ; setDatas(result.data);}).catch(err=>{alert('Unauthorized-- ! Login First');history.push('/login')}); 
     }
   useEffect(()=>{
       console.log(email);
@@ -26,7 +26,7 @@ function UserProfile() {
   return (
     <div className="userprofile-container">
 
-      <h1 style={{fontFamily: 'Ephesis',textAlign:'center',padding:'40px'}}>{name}'s All Recipes</h1>
+      <h1 style={{fontFamily: 'Ephesis',textAlign:'center',padding:'40px'}}>HIS/HER All Recipes</h1>
 
       <div className="cards-section">
 

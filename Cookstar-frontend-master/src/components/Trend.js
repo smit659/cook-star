@@ -34,7 +34,7 @@ const Trend = ({ name,routes}) => {
     };
   React.useEffect(()=>{
       async function fetches() {
-    await axios.get('http://localhost:3001/userRecipe').then((result)=>{  result.data.sort( compare );
+    await axios.get('https://cookstar.herokuapp.com/userRecipe').then((result)=>{  result.data.sort( compare );
       //   .sort(function(a,b){return a.like.length<b.like.length});
         setUserData(result.data);
         console.log(userData);}).catch((err)=>{alert(err);});
